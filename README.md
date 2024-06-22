@@ -59,5 +59,5 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE) f
 
 ## Support
 
-For support, email support@example.com or open an issue in the GitHub repository.
+For support, email srisaihemanth2@gmail.com or open an issue in the GitHub repository.
 
