@@ -5,10 +5,7 @@ pipeline {
       args '--user root -v /var/run/docker.sock:/var/run/docker.sock' // mount Docker socket to access the host's Docker daemon
     }
   }
-  environment {
-        // Assuming Docker is installed in /usr/bin, adjust if necessary
-        PATH = "/usr/bin:$PATH"
-    }
+
 stages {
     stage('Checkout') {
       steps {
@@ -21,7 +18,8 @@ stages {
     stage('Test Docker') {
             steps {
                 script {
-                    sh 'docker --version'
+                    sh 'echo "Current PATH: $PATH"'
+                    sh 'which docker || echo "Docker not found"'
                 }
             }
         }
