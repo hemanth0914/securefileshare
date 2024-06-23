@@ -16,8 +16,9 @@ stages {
       steps {
         script {
           // Install Python dependencies
-          sh 'python -m pip install --upgrade pip'
-          sh 'pip install -r requirements.txt'
+          sh 'whoami'
+          sh 'pip install --user --upgrade pip' // Using --user to avoid permission issues
+          sh 'pip install --user -r requirements.txt' // Install other packages as needed
         }
       }
     }
