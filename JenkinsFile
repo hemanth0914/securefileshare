@@ -21,7 +21,7 @@ stages {
             steps {
                 script {
                     sh 'echo "Current PATH: $PATH"'
-                    sh 'which docker || echo "Docker not found"'
+                    sh '/usr/bin/docker --version'
                 }
             }
         }
