@@ -8,7 +8,6 @@ stages {
     stage('Checkout') {
       steps {
         sh 'echo passed'
-        //git credentialsId: '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',
         //url: 'https://github.com/hemanth0914/securefileshare',
         //branch: 'main'
       }
