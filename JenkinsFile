@@ -14,15 +14,14 @@ stages {
         //branch: 'main'
       }
     }
-    stages {
-        stage('Test Docker') {
+
+    stage('Test Docker') {
             steps {
                 script {
                     sh 'docker --version'
                 }
             }
         }
-    }
     stage('Setup') {
       steps {
         script {
